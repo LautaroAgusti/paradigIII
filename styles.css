@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #333;
+}
+
+h2 {
+    color: #333;
+    text-align: left;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #007BFF; 
+}
+
+/* Estilo del título */
+.titulo {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos del Login a la derecha */
+nav ul:first-child {
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+    text-align: right; 
+}
+
+nav ul:first-child li {
+    display: inline-block;  
+    margin-left: 20px;      
+}
+
+nav ul:first-child a {
+    text-decoration: none;  
+    color: #fff;            
+    padding: 10px 15px;     
+}
+
+nav ul:last-child {
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+    text-align: center;  
+}
+
+nav ul:last-child li {
+    display: inline-block;  
+    margin-right: 20px;     
+}
+
+nav ul:last-child a {
+    text-decoration: none;  
+    color: #fff;            
+    padding: 10px 15px;     
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.contenido {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.articulo {
+    margin-bottom: 20px;
+}
+
+.articulo h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.articulo img {
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.secundario {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.secundario p {
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.piedepagina {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
