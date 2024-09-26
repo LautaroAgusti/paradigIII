@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/procesadores.css">
-    <title>Procesadores - Byte Zone</title>
+    <link rel="stylesheet" href="../css/fuentes.css">
+    <title>Fuentes de Alimentación - Byte Zone</title>
     <style>
         /* CSS adicional para hacer la transición de las imágenes */
         .card {
@@ -45,25 +45,25 @@
         <div class="product-container">
             <div class="card">
                 <div class="image-container">
-                    <img src="../imagenes/i5frente.jpg" alt="Procesador Intel Core i5 12400" class="active">
-                    <img src="../imagenes/i5costado.jpg">
-                    <img src="../imagenes/i5costado2.jpg">
+                    <img src="../imagenes/650portada.jpg" alt="Fuente Gigabyte 650W 80 Plus Bronze P650B" class="active">
+                    <img src="../imagenes/650frente.jpg">
+                    <img src="../imagenes/659costado.jpg">
                 </div>
-                <h4>Procesador Intel Core i5 12400 4.4GHz Turbo</h4>
-                <p>$195.000</p>
-                <button>Comprar</button>
+                <h4>Fuente Gigabyte 650W 80 Plus Bronze P650B</h4>
+                <p>$90.000</p>
+                <button onclick="redirigirALogin()">Comprar</button>
             </div>
             <div class="card">
                 <div class="image-container">
-                    <img src="../imagenes/i7frente.jpg" alt="Procesador Intel Core i7 12700KF" class="active">
-                    <img src="../imagenes/i7costado.jpg">
-                    <img src="../imagenes/i7costado2.jpg">
+                    <img src="../imagenes/750frontal.jpg" alt="Fuente Gigabyte 750W 80 Plus Gold UD750GM Full Modular PG5 ATX 3.0" class="active">
+                    <img src="../imagenes/750abajo.jpg">
+                    <img src="../imagenes/750atras.jpg">
                 </div>
-                <h4>Procesador Intel Core i7 12700KF 5.0GHz Turbo</h4>
-                <p>$320.000</p>
-                <button>Comprar</button>
+                <h4>Fuente Gigabyte 750W 80 Plus Gold UD750GM</h4>
+                <p>$170.000</p>
+                <button onclick="redirigirALogin()">Comprar</button>
             </div>
-            <!-- Más tarjetas de productos -->
+            <!-- Añadir más tarjetas de productos según sea necesario -->
         </div>
     </main>
 
@@ -83,7 +83,13 @@
                 }, 3000); // Cambia cada 3 segundos
             });
         });
-    </script>
+    
+    function redirigirALogin() {
+        window.location.href = "user.html";  // Cambia a la URL correcta de tu página de login
+    }
+</script>
+
+  
 
 </body>
 </html>
