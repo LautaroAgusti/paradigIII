@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Tamaño base */
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
     margin: 0;
     padding: 20px 0;
     background-color: #333;
+    font-size: 2em; 
 }
 
 h3 {
@@ -21,6 +23,7 @@ h3 {
     padding: 20px 0;
     margin: 0 auto;
     width: 80%;
+    font-size: 1.5em; 
 }
 
 /* Estilos del nav */
@@ -29,17 +32,17 @@ nav {
     padding: 10px 0;
 }
 
-/* Centrar el menú de navegación y que los elementos queden uno al lado del otro */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
 nav ul li {
-    margin: 0 3%; /* Espacio entre los elementos del menú */
+    margin: 0 3%; 
 }
 
 nav ul li a {
@@ -53,7 +56,6 @@ nav ul li a:hover {
     background-color: #ffffff;
     border-radius: 5px;
 }
-
 
 /* Estilos para la lista de componentes */
 ul {
@@ -84,7 +86,6 @@ ul li a {
     color: #333;
     font-size: 1.2em;
     transition: color 0.3s;
-    justify-content: right;
 }
 
 ul li a:hover {
@@ -100,13 +101,13 @@ ul li img {
 }
 
 /* Estilos para las tarjetas de productos */
-    .product-container {
-        display: flex;
-        justify-content: left;
-        gap: 5px; 
-    }
+.product-container {
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    flex-wrap: wrap; /* Hacer que las tarjetas se ajusten en pantallas más pequeñas */
+}
 
-/* Estilos para las tarjetas de productos */
 .card {
     margin: 10px;
     background-color: #fff;
@@ -115,8 +116,9 @@ ul li img {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 250px;
-    height: auto; /* Cambiar a auto para ajustarse al contenido dinámico */
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
     overflow: hidden;
 }
 
@@ -125,11 +127,11 @@ ul li img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Nuevo contenedor para las imágenes */
+/* Contenedor de las imágenes */
 .image-container {
     position: relative;
     width: 100%;
-    height: 250px; /* Puedes ajustar la altura si es necesario */
+    height: 250px;
     overflow: hidden;
 }
 
@@ -139,7 +141,7 @@ ul li img {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    object-fit: cover;
     border-radius: 5px;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -150,10 +152,9 @@ ul li img {
 }
 
 .card h4, .card p, .card button {
-    position: relative; /* Para asegurarnos que estos elementos sigan el flujo normal */
-    z-index: 1; /* Evitar que el texto quede debajo de las imágenes */
+    position: relative;
+    z-index: 1;
 }
-
 
 .card p {
     font-size: 1.1em;
@@ -173,4 +174,58 @@ ul li img {
 
 .card button:hover {
     background-color: #a4a4eb;
+}
+
+/* Medias queries para hacer responsive */
+
+/* Pantallas pequeñas (smartphones) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; 
+        padding: 15px 0;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    ul {
+        width: 100%; 
+    }
+
+    .product-container {
+        justify-content: center; 
+    }
+
+    .card {
+        width: 90%; 
+        margin: 10px auto;
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.8em; /* Ajuste para tablets */
+    }
+
+    ul {
+        width: 90%;
+    }
+
+    .product-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 80%; 
+    }
 }

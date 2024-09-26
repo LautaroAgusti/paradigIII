@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Tamaño base */
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
     margin: 0;
     padding: 20px 0;
     background-color: #333;
+    font-size: 2em; /* Cambiado a unidades relativas */
 }
 
 h3 {
@@ -20,7 +22,8 @@ h3 {
     text-align: left;
     padding: 20px 0;
     margin: 0 auto;
-    width: 80%;
+    width: 80%; /* Ancho relativo */
+    font-size: 1.5em; /* Tamaño ajustado */
 }
 
 /* Estilos del nav */
@@ -35,7 +38,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    flex-wrap: wrap; /* Permitir que el menú se ajuste en pantallas pequeñas */
 }
 
 nav ul li {
@@ -47,6 +51,7 @@ nav ul li a {
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s;
+    font-size: 1em; /* Tamaño ajustado */
 }
 
 nav ul li a:hover {
@@ -54,13 +59,12 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-
 /* Estilos para la lista de componentes */
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 80%; /* Ancho relativo */
     margin: 20px auto;
 }
 
@@ -96,4 +100,69 @@ ul li img {
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+/* Medias queries para hacer responsive */
+
+/* Pantallas pequeñas (smartphones) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Reducir tamaño en pantallas pequeñas */
+        padding: 15px 0;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        width: 90%; /* Ancho ajustado para pantallas pequeñas */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú vertical en pantallas pequeñas */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    ul {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+
+    ul li {
+        padding: 5%; /* Reducir padding en pantallas pequeñas */
+        margin: 10px 0;
+    }
+
+    ul li a {
+        font-size: 1em; /* Reducir el tamaño de la fuente */
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2em; /* Tamaño adaptado para tablets */
+    }
+
+    h3 {
+        font-size: 1.5em;
+        width: 85%; /* Ancho ligeramente más estrecho */
+    }
+
+    ul {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: row; /* Mantener horizontal en tablets */
+    }
+
+    nav ul li {
+        margin: 0 2%; /* Espacio más pequeño entre elementos */
+    }
+
+    ul li {
+        padding: 3%;
+        margin: 15px 0;
+    }
 }

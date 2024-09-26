@@ -35,7 +35,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
 }
 
 nav ul li {
@@ -53,7 +53,6 @@ nav ul li a:hover {
     background-color: #ffffff;
     border-radius: 5px;
 }
-
 
 /* Estilos para la lista de componentes */
 ul {
@@ -84,7 +83,6 @@ ul li a {
     color: #333;
     font-size: 1.2em;
     transition: color 0.3s;
-    justify-content: right;
 }
 
 ul li a:hover {
@@ -102,9 +100,10 @@ ul li img {
 /* Estilos para las tarjetas de productos */
 .product-container {
     display: flex;
-    justify-content: left; 
-    gap: 5px; 
+    justify-content: flex-start; 
+    gap: 5px;
     flex-wrap: wrap; 
+    padding: 20px;
 }
 
 /* Estilos para las tarjetas de productos */
@@ -126,7 +125,7 @@ ul li img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Nuevo contenedor para las imágenes */
+/* Contenedor para las imágenes */
 .image-container {
     position: relative;
     width: 100%;
@@ -140,7 +139,7 @@ ul li img {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 5px;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -181,14 +180,61 @@ ul li img {
     background-color: #a4a4eb;
 }
 
-/* Adaptaciones para pantallas más pequeñas */
+/* Media Queries para pantallas medianas (tablets) */
 @media (max-width: 768px) {
     .product-container {
-        flex-direction: column;
+        justify-content: center; /* Centra las tarjetas en pantallas medianas */
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%; /* Las tarjetas ocupan el 90% del ancho en tablets */
+    }
+
+    nav ul {
+        flex-direction: column; /* El menú se vuelve vertical */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h3 {
+        width: 90%; /* Ajusta el ancho del texto en tablets */
+    }
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño de fuente para móviles */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú vertical en móviles */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado mayor entre los elementos del menú */
+    }
+
+    .product-container {
+        flex-direction: column; /* Las tarjetas se apilan verticalmente en móviles */
         align-items: center;
     }
 
     .card {
-        width: 90%;
+        width: 100%; /* Las tarjetas ocupan todo el ancho disponible en móviles */
+        margin: 10px 0;
+    }
+
+    .image-container {
+        height: 150px; /* Ajusta la altura de las imágenes en pantallas pequeñas */
+    }
+
+    h3 {
+        width: 100%; /* Ajusta el ancho del texto para pantallas pequeñas */
     }
 }

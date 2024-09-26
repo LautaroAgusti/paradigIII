@@ -100,11 +100,12 @@ ul li img {
 
 
 /* Estilos para las tarjetas de productos */
-    .product-container {
-        display: flex;
-        justify-content: left; 
-        gap: 5px; 
-    }
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que las tarjetas se ajusten en diferentes pantallas */
+    justify-content: center; 
+    gap: 10px; /* Espacio entre tarjetas */
+}
 
 /* Estilos para las tarjetas de productos */
 .card {
@@ -173,4 +174,46 @@ ul li img {
 
 .card button:hover {
     background-color: #a4a4eb;
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    h3 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
 }
