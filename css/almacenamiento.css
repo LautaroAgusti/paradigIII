@@ -59,7 +59,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
 }
 
@@ -102,6 +102,8 @@ ul li img {
     justify-content: left;
     gap: 5px;
     flex-wrap: wrap; /* Para que los elementos se ajusten y salten de línea en pantallas pequeñas */
+    padding: 20px;
+    margin: 20px auto;
 }
 
 /* Estilos para las tarjetas de productos */

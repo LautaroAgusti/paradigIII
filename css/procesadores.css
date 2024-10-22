@@ -62,7 +62,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
 }
 
@@ -106,6 +106,8 @@ ul li img {
     justify-content: left;
     gap: 5px;
     flex-wrap: wrap; /* Hacer que las tarjetas se ajusten en pantallas más pequeñas */
+    padding: 20px;
+    margin: 20px auto;
 }
 
 .card {

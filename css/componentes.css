@@ -51,7 +51,6 @@ nav ul li a {
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s;
-    font-size: 1em; /* Tamaño ajustado */
 }
 
 nav ul li a:hover {
@@ -64,7 +63,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 80%; /* Ancho relativo */
+    width: 100%;
     margin: 20px auto;
 }
 
