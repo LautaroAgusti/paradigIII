@@ -1,11 +1,12 @@
+<?php include 'conexion.php'; ?>
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/almacenamiento.css">
-    <title>Almacenamiento - Byte Zone</title>
+    <link rel="stylesheet" href="../css/fuentes.css">
+    <title>Fuentes de Alimentación - Byte Zone</title>
     <style>
         /* CSS adicional para hacer la transición de las imágenes */
         .card {
@@ -36,9 +37,9 @@
 
     <nav>
         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="componentes.html">Componentes</a></li>
-            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="../index.php">Inicio</a></li>
+            <li><a href="componentes.php">Componentes</a></li>
+            <li><a href="sobre-nosotros.php">Sobre Nosotros</a></li>
         </ul>
     </nav>
 
@@ -46,23 +47,25 @@
         <div class="product-container">
             <div class="card">
                 <div class="image-container">
-                    <img src="../imagenes/discom2.jpg" alt="Disco Solido SSD M.2 WD 1TB WD_Black SN770 5150MB/s" class="active">
-                    <img src="../imagenes/discom2.2.jpg">
+                    <img src="../imagenes/650portada.jpg" alt="Fuente Gigabyte 650W 80 Plus Bronze P650B" class="active">
+                    <img src="../imagenes/650frente.jpg">
+                    <img src="../imagenes/659costado.jpg">
                 </div>
-                <h4>Disco Solido SSD M.2 WD 1TB SN770 5150MB/s</h4>
-                <p>$110.000</p>
+                <h4>Fuente Gigabyte 650W 80 Plus Bronze P650B</h4>
+                <p>$90.000</p>
                 <button onclick="redirigirALogin()">Comprar</button>
             </div>
             <div class="card">
                 <div class="image-container">
-                    <img src="../imagenes/ssd2.jpg" alt="Disco Solido SSD Team 2TB T-Force Vulcan Z 550MB/s" class="active">
-                    <img src="../imagenes/ss2.0.jpg">
+                    <img src="../imagenes/750frontal.jpg" alt="Fuente Gigabyte 750W 80 Plus Gold UD750GM Full Modular PG5 ATX 3.0" class="active">
+                    <img src="../imagenes/750abajo.jpg">
+                    <img src="../imagenes/750atras.jpg">
                 </div>
-                <h4>Disco Solido SSD Team 2TB Vulcan Z 550MB/s</h4>
-                <p>$130.000</p>
+                <h4>Fuente Gigabyte 750W 80 Plus Gold UD750GM</h4>
+                <p>$170.000</p>
                 <button onclick="redirigirALogin()">Comprar</button>
             </div>
-            <!-- Más tarjetas de productos -->
+            <!-- Añadir más tarjetas de productos según sea necesario -->
         </div>
     </main>
 
@@ -82,9 +85,13 @@
                 }, 3000); // Cambia cada 3 segundos
             });
         });
-        function redirigirALogin() {
-        window.location.href = "user.html";  // Cambia a la URL correcta de tu página de login
+    
+    function redirigirALogin() {
+        window.location.href = "user.php";  // Cambia a la URL correcta de tu página de login
     }
-</script>s
+</script>
+
+  
+
 </body>
 </html>

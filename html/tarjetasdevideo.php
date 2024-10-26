@@ -1,3 +1,5 @@
+<?php include 'conexion.php'; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,9 +19,9 @@
         <ul>
         <br><br>
         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="componentes.html">Componentes</a></li>
-            <li><a href="armatupc.html">Arma tu PC</a></li>
+            <li><a href="../index.php">Inicio</a></li>
+            <li><a href="componentes.php">Componentes</a></li>
+            <li><a href="armatupc.php">Arma tu PC</a></li>
         </ul>
     </nav>
 
@@ -66,7 +68,7 @@
             });
         });
         function redirigirALogin() {
-        window.location.href = "user.html";  // Cambia a la URL correcta de tu página de login
+        window.location.href = "user.php";  // Cambia a la URL correcta de tu página de login
     }
 </script>
 </body>

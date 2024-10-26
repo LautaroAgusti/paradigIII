@@ -1,10 +1,12 @@
+<?php include 'conexion.php'; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/memorias.css">
-    <title>Memorias RAM - Byte Zone</title>
+    <link rel="stylesheet" href="../css/placasmadres.css">
+    <title>Placas Madre - Byte Zone</title>
 </head>
 <body>
     <header>
@@ -15,9 +17,9 @@
 
     <nav>
         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="componentes.html">Componentes</a></li>
-            <li><a href="armatupc.html">Arma tu PC</a></li>
+            <li><a href="../index.php">Inicio</a></li>
+            <li><a href="../html/componentes.php">Componentes</a></li>
+            <li><a href="../html/armatupc.php">Arma tu PC</a></li>
         </ul>
     </nav>
 
@@ -25,20 +27,24 @@
         <div class="product-container">
             <div class="card">
                 <div class="image-container">
-                    <img src="../imagenes/ddr4ram.jpg" alt="Memoria Ram Fury Beast 16gb Ddr4 3200MHZ" class="active">
-                    <img src="../imagenes/ddr4ram2.jpg">
+                    <img src="../imagenes/motherfrontal.jpg" alt="Mother Gigabyte B760 AORUS ELITE AX WIFI DDR5" class="active">
+                    <img src="../imagenes/motherfrontal1.jpg">
+                    <img src="../imagenes/mothercostado.jpg">
+                    <img src="../imagenes/motheratras.jpg">
                 </div>
-                <h4>Memoria Ram Fury Beast 16gb Ddr4 3200MHZ</h4>
-                <p>$70.000</p>
+                <h4>Mother Gigabyte B760 AORUS ELITE AX WIFI DDR5</h4>
+                <p>$245.000</p>
                 <button>Comprar</button>
             </div>
             <div class="card">
                 <div class="image-container">
-                    <img src="../imagenes/ddr5ram.jpg" alt="Memoria Ram Fury Beast 32GB Ddr5 5600MHZ" class="active">
-                    <img src="../imagenes/ddr5ram2.jpg">
+                    <img src="../imagenes/motherz790portada.jpg" alt="Mother MSI Z790 PROJECT ZERO LGA 1700" class="active">
+                    <img src="../imagenes/z790frontal.jpg">
+                    <img src="../imagenes/z790costado.jpg">
+                    <img src="../imagenes/z790atras.jpg">
                 </div>
-                <h4>Memoria Kingston Fury Beast 32GB DDR5</h4>
-                <p>$140.000</p>
+                <h4>Mother MSI Z790 PROJECT ZERO LGA 1700</h4>
+                <p>$320.000</p>
                 <button>Comprar</button>
             </div>
             <!-- Más tarjetas de productos -->

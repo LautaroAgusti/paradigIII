@@ -1,3 +1,5 @@
+<?php include "html/conexion.php"; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,12 +17,12 @@
     <nav>
         <br>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="html/componentes.html">Componentes</a></li>
-            <li><a href="html/armatupc.html">Arma tu PC</a></li>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="./html/componentes.php">Componentes</a></li>
+            <li><a href="html/armatupc.php">Arma tu PC</a></li>
             </ul>
             
-            <li><a href="html/user.html">Login</a></li>
+            <li><a href="html/user.php">Login</a></li>
     </nav>
 
     <main>
@@ -40,7 +42,7 @@
      <div class="secundario">
     <nav>
         <ul>
-            <li><a href="html/nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="html/nosotros.php">Sobre Nosotros</a></li>
         </ul>
      </div>
     </main>

@@ -1,3 +1,4 @@
+<?php include 'conexion.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,9 +36,9 @@
 
     <nav>
         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="componentes.html">Componentes</a></li>
-            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="../index.php">Inicio</a></li>
+            <li><a href="componentes.php">Componentes</a></li>
+            <li><a href="sobre-nosotros.php">Sobre Nosotros</a></li>
         </ul>
     </nav>
 
